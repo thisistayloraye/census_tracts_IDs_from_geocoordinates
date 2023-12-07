@@ -43,8 +43,8 @@ colnames(census_tract_demographics_raw)
 
 
 ```{r}
-#View(mpv_raw)
-#mpv_raw$tract # missing a lot of census tracts
+View(mpv_raw)
+mpv_raw$tract # missing a lot of census tracts
 sum(is.na(mpv_raw$tract))
 dim(mpv_raw)
 ```
@@ -52,7 +52,7 @@ dim(mpv_raw)
 ### Clean up MPV data to be up to 2017, since the Census data only goes up to 2017 
 ```{r}
 mpv_raw$date <- as.Date(mpv_raw$date, format = "%m/%d/%Y")
-#mpv_raw$date
+mpv_raw$date
 ```
 
 
@@ -163,7 +163,7 @@ length(unique(tract_IDs_CA)) # 863 unique census tracts
 ```{r}
 tract_IDs_CA_final <- c(unique(tract_IDs_CA))
 ```
-### Print final list
+
 ```{r}
 length(tract_IDs_CA_final) # sanity check to make sure there's only 863
 print(tract_IDs_CA_final) # print Census Tract FIPS codes that experienced police violence through 2017
