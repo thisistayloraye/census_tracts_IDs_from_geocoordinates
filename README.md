@@ -10,5 +10,8 @@ Extracting Census Tract FIPS codes from latitude and longitude coordinates using
 
 **See file called "r-script-tutorial.R" for line by line code.**
 
+More on Census Tract IDs (often used as standins for "neighborhoods") and other geographic identifiers used by the U.S. Census: https://www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html
+
+
 Script loosely follows the tutorial outlined here: https://stackoverflow.com/questions/52248394/get-census-tract-from-lat-lon-using-tigris
 
